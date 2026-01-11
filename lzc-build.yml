@@ -1,0 +1,16 @@
+# manifest: 指定 lpk 包的 manifest.yml 文件路径
+manifest: ./lzc-manifest.yml
+
+# pkgout: lpk 包的输出路径
+pkgout: ./
+
+# icon: 指定 lpk 包 icon 的路径（必须是 PNG 格式，512x512）
+icon: ./icon.png
+
+# compose_override - 覆盖不支持的 Docker Compose 参数
+# 此应用需要挂载 Docker socket 来管理容器
+compose_override:
+  services:
+    dockhand-service:
+      volumes:
+        - /data/playground/docker.sock:/var/run/docker.sock
