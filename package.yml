@@ -1,0 +1,20 @@
+package: community.lazycat.app.dockhand
+version: 1.0.6
+name: Dockhand
+description: "Docker management tool with a friendly web interface"
+license: MIT
+homepage: https://github.com/fnsys/dockhand
+author: fnsys
+min_os_version: 1.5.0
+unsupported_platforms:
+  - ios
+  - android
+  - tvos
+
+locales:
+  en:
+    name: "Dockhand"
+    description: "Docker management tool with a friendly web interface"
+  zh:
+    name: "Dockhand"
+    description: "一个友好的 Docker 管理工具，提供简洁的 Web 界面"
